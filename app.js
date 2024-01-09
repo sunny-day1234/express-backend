@@ -38,10 +38,4 @@ app.use(function (err, req, res, next) {
   res.render("error");
 });
 
-const port = process.env.PORT || 8080;
-
-app.listen(port, function () {
-  console.log("Example app listening on port 5051!");
-});
-
 module.exports = app;
