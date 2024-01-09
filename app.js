@@ -38,7 +38,9 @@ app.use(function (err, req, res, next) {
   res.render("error");
 });
 
-app.listen(5051, function () {
+const port = process.env.PORT || 8080;
+
+app.listen(port, function () {
   console.log("Example app listening on port 5051!");
 });
 
